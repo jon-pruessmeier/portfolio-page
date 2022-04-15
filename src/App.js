@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
@@ -7,9 +7,10 @@ import Projects from "./components/Projects";
 
 
 function App() {
+  const projectsJSON = [];
 
   const home = Home();
-  //const projects = Projects(projectsJSON);
+  const projects = Projects(projectsJSON);
   const about = About();
 
 
@@ -18,15 +19,16 @@ function App() {
   const [pageJSX, setPageJSX] = useState(home);
 
   const changePage = () => {
-    /*
     if (currentPage === "projects"){
       setPageJSX = projects;
-    } else */ if (currentPage === "about"){
+    } else if (currentPage === "about"){
       setPageJSX = about;
     } else {
       setPageJSX = home;
     }
   }
+
+  useEffect(changePage);
 
   
 
@@ -37,7 +39,7 @@ function App() {
 
         <Navigation/>
 
-        <div className="Section col-9 bg-secondary vh-100 d-flex align-items-center justify-content-center fs-1 text-white">
+        <div className="Section col-9 bg-dark vh-100 d-flex align-items-center justify-content-center fs-1 text-white">
           {pageJSX}
         </div>
 
