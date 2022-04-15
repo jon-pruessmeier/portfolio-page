@@ -20,6 +20,11 @@
 
 # private
 /src/imgs/*
+/imgs/*
+projects.json
+/public/imgs/*
+skills.json
+
 
 npm-debug.log*
 yarn-debug.log*

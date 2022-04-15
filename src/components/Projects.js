@@ -1,8 +1,8 @@
 import ProjectCard from "./ProjectCard";
 
-function Projects(projects){
+function Projects(props){
 
-    const projectsCards = projects.map((project) => ProjectCard(project)) //project == JSON
+    const projectsCards = props.projectsList.map((project) => <ProjectCard project={project}/>) //project == JSON
 
     return (
         <div className="card-deck">

@@ -3,21 +3,21 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
+import projectsJSON from "./projects.json"
 
 
 
 function App() {
-  const projectsJSON = [];
 
-  const home = Home();
-  const projects = Projects(projectsJSON);
-  const about = About();
+  const home = <Home/>;
+  const projects = <Projects projectsList={projectsJSON}/>
+  const about = <About/>
 
   const [currentPage, setCurrentPage] = useState("home");
-
   const [pageJSX, setPageJSX] = useState(home);
 
-  const changePage = () => {
+
+  function changePage() {
     if (currentPage === "projects"){
       return projects;
     } else if (currentPage === "about"){
@@ -28,8 +28,8 @@ function App() {
   }
 
   useEffect(() => {
-      setCurrentPage( changePage() )
-    }
+      setPageJSX( changePage() )
+    }, [currentPage]
   );
 
   
@@ -39,7 +39,7 @@ function App() {
     <div className="App container-fluid h-100">
       <div className="row h-100">
 
-        <Navigation/>
+        <Navigation stateChanger={setCurrentPage}/>
 
         <div className="Section col-9 bg-dark vh-100 d-flex align-items-center justify-content-center fs-1 text-white">
           {pageJSX}

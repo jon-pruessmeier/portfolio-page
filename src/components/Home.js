@@ -1,8 +1,8 @@
-import profile_img from "../imgs/profile_pic.jpg"
-
 const imgStyle = {
     borderRadius: "50%"
 }
+
+const imgPath = process.env.PUBLIC_URL + '/imgs/profile_pic.jpg';
 
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
         <div className="container">
                 <div className="row">
                     <div className="col-12 d-flex justify-content-center">
-                        <img src={profile_img} alt="profile" style={imgStyle}/>
+                        <img src={imgPath} alt="profile" style={imgStyle}/>
                     </div>
                 </div>
 
