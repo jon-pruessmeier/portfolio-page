@@ -1,20 +1,15 @@
 import skillsJSON from "../skills.json";
 import SkillSet from "./SkillSet";
 
-function About() {
+function Technologies() {
 
     const languages = <SkillSet name="Programming Languages" skills={skillsJSON.languages}/>
     const frontendAndMobile = <SkillSet name="Frontend and Mobile" skills={skillsJSON.frontendAndMobile}/>
     const backend = <SkillSet name="Backend" skills={skillsJSON.backend}/>
     const misc = <SkillSet name="Miscellaneous" skills={skillsJSON.misc}/>
 
-    const aboutStyle = {
-        
-    }
-
-
     return (
-        <div className="container-fluid overflow-scroll">
+        <div className="col my-2">
             {languages}
             {frontendAndMobile}
             {backend}
@@ -22,4 +17,4 @@ function About() {
         </div>
     )
 }
-export default About;
+export default Technologies;

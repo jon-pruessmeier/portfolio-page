@@ -9,11 +9,15 @@ function SkillSet(props){
     return (
         <div className="row">
             <div className="col">
-                <h1>{skillSetName + ":"}</h1>
-            <div className="col d-flex justify-content-center">
-                {skillsJSX}
-            </div>   
-        </div>
+                <div className="row">
+                    <div className="col-12 d-flex justify-content-center">
+                        <h2>{skillSetName + ":"}</h2>
+                    </div>
+                </div>
+                <div className="row d-flex justify-content-center">
+                    {skillsJSX}
+                </div>
+            </div>
         </div>
         
     )

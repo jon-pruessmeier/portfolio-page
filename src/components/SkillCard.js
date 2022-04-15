@@ -6,18 +6,30 @@ function SkillCard(props){
     }
 
     const imgStyle = {
-        width: "50px",
-        height: "50px"
+        height: "75%"
+    }
+
+    const cardStyle = {
+        height: "150px",
+        width: "150px"
+    }
+
+    const topStyle = {
+        height: "60%"
+    }
+
+    const bottomStyle = {
+        height: "40%"
     }
 
     return (
-        <div className="col-12 col-md-4 col-lg-2">
-            <div className="card text-center bg-light text-dark">
-                <img className="card-img-top" alt={`logo of ${skillName}`} src={imgSrc}  style={imgStyle}/>
-                <div className="card-body">
-                    <h2 className="card-title">{skillName}</h2>
-                </div>
-            </div>
+        <div style={cardStyle} className="col-10 col-sm-4 col-xl-2 mx-2 my-1 text-center rounded bg-light text-dark d-flex justify-content-center flex-column">
+                    <div className="d-flex justify-content-center mt-2 align-items-center" style={topStyle}>
+                        <img alt={`logo of ${skillName}`} src={imgSrc} style={imgStyle}/>
+                    </div>
+                    <div className="d-flex justify-content-center mt-2" style={bottomStyle}>
+                        <h3>{skillName}</h3>
+                    </div>
         </div>
         
     )
