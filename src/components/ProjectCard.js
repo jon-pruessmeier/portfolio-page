@@ -6,7 +6,7 @@ function ProjectCard(props){
 
     return (
         <div className="card text-white bg-dark">
-            <img className="card-img-top" src={img}/>
+            <img className="card-img-top" alt="card-pic" src={img}/>
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">{description}</p>

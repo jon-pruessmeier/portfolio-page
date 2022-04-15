@@ -13,22 +13,24 @@ function App() {
   const projects = Projects(projectsJSON);
   const about = About();
 
-
   const [currentPage, setCurrentPage] = useState("home");
 
   const [pageJSX, setPageJSX] = useState(home);
 
   const changePage = () => {
     if (currentPage === "projects"){
-      setPageJSX = projects;
+      return projects;
     } else if (currentPage === "about"){
-      setPageJSX = about;
+      return about;
     } else {
-      setPageJSX = home;
+      return home;
     }
   }
 
-  useEffect(changePage);
+  useEffect(() => {
+      setCurrentPage( changePage() )
+    }
+  );
 
   
 
