@@ -21,8 +21,8 @@ function Home() {
                                 <h1>Hi, I'm Jón Prüßmeier</h1>
                                 <h3>I am an aspiring Software Developer based in Bielefeld.</h3>
                                 <div className="col d-flex justify-content-center">
-                                  <i className="bi bi-linkedin mx-2"></i>
-                                  <i className="bi bi-github mx-2"></i>  
+                                  <i className="bi bi-linkedin mx-2 zoomPic pointerIcon"></i>
+                                  <i className="bi bi-github mx-2 zoomPic pointerIcon"></i>  
                                 </div>
                                 
                             </div>

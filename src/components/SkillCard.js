@@ -23,11 +23,11 @@ function SkillCard(props){
     }
 
     return (
-        <div style={cardStyle} className="col-10 col-sm-4 col-xl-2 mx-2 my-1 text-center rounded bg-light text-dark d-flex justify-content-center flex-column">
-                    <div className="d-flex justify-content-center mt-2 align-items-center" style={topStyle}>
+        <div style={cardStyle} className="col-10 col-sm-4 col-xl-2 mx-2 my-1 text-center rounded bg-secondary bg-opacity-25 text-light d-flex justify-content-center flex-column">
+                    <div className="d-flex justify-content-center align-items-center pointerIcon skillIcon h-75" style={topStyle}>
                         <img alt={`logo of ${skillName}`} src={imgSrc} style={imgStyle}/>
                     </div>
-                    <div className="d-flex justify-content-center mt-2" style={bottomStyle}>
+                    <div className="d-flex justify-content-center h-25" style={bottomStyle}>
                         <h3>{skillName}</h3>
                     </div>
         </div>
