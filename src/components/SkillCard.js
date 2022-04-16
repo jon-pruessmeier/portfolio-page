@@ -11,7 +11,7 @@ function SkillCard(props){
 
     const cardStyle = {
         height: "150px",
-        width: "150px"
+        width: "170px"
     }
 
     const topStyle = {

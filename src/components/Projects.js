@@ -5,7 +5,7 @@ function Projects(props){
     const projectsCards = props.projectsList.map((project) => <ProjectCard project={project}/>) //project == JSON
 
     return (
-        <div className="card-deck">
+        <div className="col-12 overflow-auto vh-100">
             {projectsCards}
         </div>
 

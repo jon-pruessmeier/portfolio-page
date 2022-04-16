@@ -6,10 +6,10 @@ function Technologies() {
     const languages = <SkillSet name="Programming Languages" skills={skillsJSON.languages}/>
     const frontendAndMobile = <SkillSet name="Frontend and Mobile" skills={skillsJSON.frontendAndMobile}/>
     const backend = <SkillSet name="Backend" skills={skillsJSON.backend}/>
-    const misc = <SkillSet name="Miscellaneous" skills={skillsJSON.misc}/>
+    const misc = <SkillSet name="Further" skills={skillsJSON.misc}/>
 
     return (
-        <div className="col my-2">
+        <div className="col overflow-y-auto">
             {languages}
             {frontendAndMobile}
             {backend}
