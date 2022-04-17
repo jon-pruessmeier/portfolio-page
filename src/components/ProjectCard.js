@@ -103,9 +103,9 @@ function ProjectCard(props){
         }
 
         return (
-            <div className="col-7 text-left">
-                    <h2 className="text-center">{name}</h2>
-                    <p className="text-left">{description}</p>
+            <div className="col-7 text-left d-flex justify-content-center flex-column text-center">
+                    <h1 className="mt-2 font-weight-bold">{name}</h1>
+                    <p>{description}</p>
                     {seeAlso()}
             </div>
         )
