@@ -9,11 +9,11 @@ function Technologies() {
     const misc = <SkillSet name="Furthermore" skills={skillsJSON.misc}/>
 
     return (
-        <div className="col overflow-y-auto">
-            {languages}
-            {frontendAndMobile}
-            {backend}
-            {misc}
+        <div className="col-12 overflow-auto vh-100">
+              {languages}  
+              {frontendAndMobile}  
+                {backend}
+                {misc}
         </div>
     )
 }
