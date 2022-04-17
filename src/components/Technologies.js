@@ -8,12 +8,17 @@ function Technologies() {
     const backend = <SkillSet name="Backend" skills={skillsJSON.backend}/>
     const misc = <SkillSet name="Furthermore" skills={skillsJSON.misc}/>
 
+    const overflowStyle = {
+        overflowY: "auto",
+        overflowX: "hidden"
+    }
+
     return (
-        <div className="col-12 overflow-auto vh-100">
-              {languages}  
-              {frontendAndMobile}  
-                {backend}
-                {misc}
+        <div className="col-12 vh-100" style={overflowStyle}>
+            {languages}  
+            {frontendAndMobile}  
+            {backend}
+            {misc}
         </div>
     )
 }
