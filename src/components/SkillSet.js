@@ -9,7 +9,7 @@ function SkillSet(props){
     return (
         <div className="row">
             <div className="col">
-                <div className="row mt-2">
+                <div className="row mt-3">
                     <div className="col d-flex justify-content-center">
                         <h2>{skillSetName + ":"}</h2>
                     </div>

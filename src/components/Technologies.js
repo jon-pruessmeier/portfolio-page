@@ -14,11 +14,14 @@ function Technologies() {
     }
 
     return (
-        <div className="col-12 vh-100 d-flex justify-content-center flex-column" style={overflowStyle}>
-            {languages}  
-            {frontendAndMobile}  
-            {backend}
-            {misc}
+        <div className="col-12 vh-100 d-flex justify-content-center flex-column">
+            <div style={overflowStyle} className="h-100 my-3" >
+                {languages}  
+                {frontendAndMobile}  
+                {backend}
+                {misc}  
+            </div>
+            
         </div>
     )
 }
