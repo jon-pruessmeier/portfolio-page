@@ -24,6 +24,7 @@
 projects.json
 /public/imgs/*
 skills.json
+personal.json
 
 
 npm-debug.log*

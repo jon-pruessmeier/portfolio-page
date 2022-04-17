@@ -99,16 +99,13 @@ function ProjectCard(props){
                     <h4 className="text-light">See also: {linkGitHub()} {linkWeb()}</h4>                    
                 )
             } 
-
-
-
             return null;
         }
 
         return (
-            <div className="col-7 text-center">
-                    <h2>{name}</h2>
-                    <p>{description}</p>
+            <div className="col-7 text-left">
+                    <h2 className="text-center">{name}</h2>
+                    <p className="text-left">{description}</p>
                     {seeAlso()}
             </div>
         )
@@ -119,7 +116,7 @@ function ProjectCard(props){
         if (props.index % 2 === 0) {
             return (
                 <div className="row">
-                    <div className="col-5" style={cursorStyle}>
+                    <div className="col-5 d-flex flex-column justify-content-center" style={cursorStyle}>
                         <img src={img} alt={name} className="my-2 img-fluid rounded zoomPic" onClick={() => {setOpen(true)}}/>
                     </div>
 
@@ -136,7 +133,7 @@ function ProjectCard(props){
 
                 {modal()}
 
-                <div className="col-5" style={cursorStyle}>
+                <div className="col-5 d-flex flex-column justify-content-center" style={cursorStyle}>
                     <img src={img} alt={name} className="my-2 img-fluid rounded zoomPic" onClick={() => {setOpen(true)}}/>
                 </div>
                     
@@ -148,7 +145,7 @@ function ProjectCard(props){
     return (
         <div className={justify()}>
 
-            <div className="col-8 bg-secondary bg-opacity-25 text-light mx-3 my-3 rounded">
+            <div className="col-10 bg-secondary bg-opacity-25 text-light mx-3 my-3 rounded">
                 <div className="row">
                     
                     {arrangement()}
