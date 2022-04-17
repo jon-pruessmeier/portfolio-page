@@ -14,7 +14,7 @@ function Technologies() {
     }
 
     return (
-        <div className="col-12 vh-100" style={overflowStyle}>
+        <div className="col-12 vh-100 d-flex justify-content-center flex-column" style={overflowStyle}>
             {languages}  
             {frontendAndMobile}  
             {backend}
